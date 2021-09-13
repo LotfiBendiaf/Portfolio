@@ -1,0 +1,289 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <title>Lotfi Bendiaf</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&family=Courier+Prime:ital,wght@1,700&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--Style-->
+    <link id="theme-style" rel="stylesheet" type="text/css" href="{% static "Styles/default.css" %}">
+
+</head>
+<body>
+<!-- Main Content-->
+
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<br>
+				<img id="profile-pic" src="{% static "Images/Lotfi_Profil_photo.jpg" %}" alt="" />
+				<h1> <span> < </span>Hi, I'm Lotfi BENDIAF <span style="color: red;"> / </span> <span> > </span> </h1>
+			</div>
+
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+					<div class="dots-wraper">
+						<div id="dot-1" class="browser-dot"></div>
+						<div id="dot-2" class="browser-dot"></div>
+						<div id="dot-3" class="browser-dot"></div>
+					</div>
+					<ul id="navigation">
+						<li><a href="#">Contact</a></li>
+					</ul>
+					
+				</div>
+
+				<div class="left-column">
+					<img id="profile-pic" src="{% static "Images/Lotfi_Profil_photo2.jpg" %}">
+					<h4 class="highlight">Choose your atmosphere, Dark or Light ?</h4>
+					<div id="theme-option-wraper">
+						<div data-mode="light" id="light-mode" class="theme-dot" title="Light Mode"></div>
+						<div data-mode="dark" id="dark-mode" class="theme-dot" title="Dark Mode"></div>
+					</div>
+					<p id="setting-note">*Theme settings will be saved for<br>your next visit</p>
+				</div>
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							
+							<h3>Who i am ?</h3>
+							<p>
+								I am a software engineer and PhD Student,
+								developing is my passion and solving problems is my ambition and all this while having fun !
+							</p>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class ="s2">
+		<div class="main-container">
+
+			<div class="about-wrapper">
+
+				<div class="about-me">
+					<h2>What i do ?</h2>
+					<div id="description">
+						<p>
+							I am a doctoral researcher at Hassiba BenBouali university of chlef Algeria and software engineert graduated from [Ecole nationale polytechnique d'Oran Maurice Audin]
+						</p>
+						<p>
+							I also studied mathematics and physics 
+						</p>
+						<a target="_blank" href="{% url 'Resume' %}">Watch my resume <span>[ PDF ]</span></a>
+					</div>
+					<hr>
+
+					<h2>Profile</h2>
+					<p>Fullstack developer with primary focus on Django python and React, <br>I also do business consulting and project management<br>
+						<a target="_blank" href="{% url 'Business_Plan' %}"> Download my Business Plan <span>[ PDF ]</span></a></p>
+						<br>
+					<h2>Top expertise & Skills</h2>
+					<div id="skills">
+						<ul>
+							<li>HTML/CSS/JavaScript</li>
+							<li>Python</li>
+							<li>Django</li>
+							<li>React</li>
+							<li>Java</li>
+							<li>Php</li>
+							<li>PostgreSQL</li>
+							<li>illustrator</li>
+						</ul>
+
+						<ul>
+							<li style="color: #63c3db; ">And also :</li>
+							<li>R</li>
+							<li>Artificial Intelligence</li>
+							<li>Machine Learning</li>
+							<li>Grapic Designer</li>
+							<li>Projects management and Consultiing</li>
+						</ul>
+						
+					</div>
+
+				</div>
+
+				<div class="social-links">
+					<img id="social-img" src="{% static "Images/entrepreneur.jpg" %}">
+					<b><h2>Find me on my Socials network</h2></b>
+					<div style="display: flex; flex-direction: row; justify-content:  center;">
+						<a target="_blank" href="https://www.facebook.com/lotfi.bendiaf/">
+							<img id="Facebook" src="{% static "Images/facebook.png" %}" style="width: 30px; height: 30px; margin: 10px;">
+						</a>
+						<a target="_blank" href="https://twitter.com/Lotfi85236612">
+							<img id="Twitter" src="{% static "Images/twitter.png" %}" style="width: 30px; height: 30px; margin: 10px;">
+						</a>
+						<a target="_blank" href="https://www.instagram.com/lotfi_bendiaf/">
+							<img id="Instagram" src="{% static "Images/instagram.png" %}" style="width: 30px; height: 30px; margin: 10px;">
+						</a>
+						<a target="_blank" href="https://www.linkedin.com/in/lotfi-bendiaf-04574018a/">
+							<img id="LinkedIn" src="{% static "Images/linkedin.png" %}" style="width: 30px; height: 30px; margin: 10px;">
+						</a>
+						<img id="Whatsapp" src="{% static "Images/whatsapp.png" %}" style="width: 30px; height: 30px; margin: 10px;">
+						<div style="display: flex; flex-direction: column; justify-content: center;"><span>+213549706457</span></div>
+					</div>
+
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section class ="s1">
+		<div class="main-container">
+			<h1 style="text-align: center; margin: 0; padding: 20px;">Some of my past Projects</h1>
+			<div class="post-wrapper">
+				<div class="post">
+					<img class="thunbail" src="{% static "Images/bg_project_image_01.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">ArchivDOC [SONATRACH Company]</h4>
+						<p class="post-intro">
+							Web application developped using JAVA with (JEE) framework in a frame of my engineering graduation project, 
+							Called ArchivDOC this app allows the company to manage their archive and improve performances
+						</p>
+						<br>
+						<br>
+					</div>
+				</div>
+
+				<div class="post">
+					<img class="thunbail" src="{% static "Images/bg_project_image_03.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">E-Commerce WEB SITE</h4>
+						<p class="post-intro">
+							Website developed using DJango framework and frontend programming languages	[HTML,CSS, JavaScript] 
+							and hosted by Heroku applications server,the e-commerce web site called 'My Price Check'
+						</p>
+						<br>
+						<a target="_blank" href="https://price-comparison-website.herokuapp.com/">Read More</a>
+					</div>
+				</div>
+
+				<div class="post">
+					<img class="thunbail" src="{% static "Images/bg_project_image_02.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">Optimisation System app with BIG DATA</h4>
+						<p class="post-intro">
+							User interface system developed by Cypher Programming Language and Neo4J No SQL database, 
+							This system developed in BIG DATA context allows the entreprise to manage correctly a large amount of data
+						</p>
+						<br>
+						<br>
+					</div>
+				</div>
+			</div>
+
+				<div class="post-wrapper_2">
+					<div class="post">
+                        <img class="thunbail" src="{% static "Images/bg_project_image_04.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">My Portfolio</h4>
+						<p class="post-intro">Personal portfolio Web site build with DJango framework and frontend programming languages [HTML,CSS, JavaScript] which defines me and describes my work</p>
+						<br>
+						<br>
+						<br>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+
+				<div class="post">
+					<img class="thunbail" src="{% static "Images/supply_chain.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">Supply chain management </h4>
+						<p class="post-intro">Supply chain management web application with authentication system and with full functional pannel to manage all interactions between customers, providers and deliverers. Build with Python/Django hosted with PostgreSQL database and Google cloud storage file server  </p>
+						<br>
+						<div style="display: flex; flex-direction: row; justify-content: space-between;">
+							<a href="https://genie-distribution.herokuapp.com">Link</a>
+							<a target="_blank" href="{% url 'Facture' %}">Invoice example <span>[ PDF ]</span></a>
+						</div>
+						
+					</div>
+				</div>
+
+				<div class="post">
+					<img class="thunbail" src="{% static "Images/bg_project_image_05.png" %}">
+					<div class="post-preview">
+						<h4 class="post-title">Text Analysis Desktop App</h4>
+						<p class="post-intro">Text Analysis Desktop App entirely build with Java, this desktop app allows collecting data text, analyse content with algorithms and gives statistics of the content </p>
+						<br>
+						<br>
+						<br>
+						<a href="#">Read More</a>
+					</div>
+				</div>
+
+				</div>
+
+		</div>
+	</section>
+
+	<section class ="s1">
+        <h1 style="text-align: center; margin: 0; padding: 20px;">Some logos & designs</h1>
+        <div class="logos">
+            <img style="width: 150px; height: 170px;" src="{% static "Images/genie_distribution_icon.png" %}">
+            <img style="width: 150px; height: 200px;" src="{% static "Images/Lyon.png" %}">
+            <img style="width: 150px; height: 150px;" src="{% static "Images/Quiosk-icon-3.png" %}">
+            <img style="width: 200px; height: 170px;" src="{% static "Images/Circles-logo.png" %}">
+            <img style="width: 170px; height: 170px;" src="{% static "Images/cats.png" %}">
+            <img style="width: 150px; height: 150px;" src="{% static "Images/Shop_Mountain-icon.png" %}">
+            <img style="width: 170px; height: 170px;" src="{% static "Images/Saloon_icon.png" %}">
+        </div>
+        <div class="designs">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_Flyer-mockup.jpg" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-2.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-12.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-10.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-11.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-15.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-3.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-5.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-7.png" %}">
+            <img style="width: 250px; height: 250px; border-radius: 7px;" src="{% static "Images/Quiosk_mockup-8.png" %}">
+        </div>
+
+	</section>
+
+<section class ="s2">
+		<div class="main-container">
+			<br><br>
+		<a target="_blank" href="https://calendly.com/lotfi-bendiaf/60min">
+			<div id="calendly-section">
+				<h3>You can book a meet up with me to professional purpose with Calendly</h3>
+				<img id="Calendly" src="{% static "Images/calendly.png" %}" style="width: 200px; height: 100px; margin: 10px;">
+			</div>
+		</a>
+			<h2 style="text-align: center; margin: 0; padding: 20px;">Or get In Touch</h2>
+			<form method="POST" id="contact-form">
+                {% csrf_token %}
+				<label>Name</label>
+				<input class="input-field" required type="text" name="name">
+
+				<label>Subject</label>
+				<input class="input-field" required type="text" name="subject">
+
+				<label>E-Mail</label>
+				<input class="input-field" required type="text" name="email">
+
+				<label>Message</label>
+				<textarea class="input-field" required name="message"></textarea> 
+
+				<input id="submit-btn" type="submit" name="Send">
+			</form>
+			<!--iframe src="Curriculum Vitae[EN].pdf" width="100%" height="500px"></iframe-->
+		</div>
+	</section>
+
+    <script type="text/javascript" src="{% static "Scripts/script.js" %}"></script>
+</body>
+</html>
