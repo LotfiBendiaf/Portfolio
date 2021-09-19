@@ -34,6 +34,6 @@ def businessPlan(request):
 	return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def resume(request):
-	filepath = os.path.join('static', 'Resume_fr.pdf')
+	filepath = os.path.join('static', 'Lotfi _BENDIAF_CV_(EN).pdf')
 	return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
