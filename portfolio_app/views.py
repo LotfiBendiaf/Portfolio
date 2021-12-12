@@ -34,6 +34,6 @@ def businessPlan(request):
 	return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
 def resume(request):
-	filepath = os.path.join('static', 'MyResume(FR).pdf')
+	filepath = os.path.join('static', 'MyResume(EN).pdf')
 	return FileResponse(open(filepath, 'rb'), content_type='application/pdf')
 
